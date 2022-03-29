@@ -1,17 +1,17 @@
 <?php
 session_start();
-require("config.php");
+require("configure.php");
 $db = new mysqli ($dbhost,$dbuser,$dbpassword,$dbdatabase);
 if(isset($_SESSION['EMPLOYEE'])){
     $employee_id = $_SESSION['EMPLOYEEID'];
     if(isset($_POST['employ'])){
-        header('location:employee.php');
+        header('location:details.php');
     }
     if(isset($_POST['task'])){
-        header('location:task.php');
+        header('location:etask.php');
     }
     if(isset($_POST['wallet'])){
-        header('location:wallet.php');
+        header('location:ewallet.php');
     }
     if(isset($_POST['payment'])){
         header('location:payment.php');
