@@ -1,0 +1,9 @@
+<?php
+session_start();
+if(isset($_SESSION['EMPLOYEE'])){
+    header('location:ehome.php');
+}
+else{
+    header('location:elogin.php');
+}
+?>
