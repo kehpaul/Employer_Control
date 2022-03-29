@@ -6,4 +6,4 @@ Import the database.db into your database
 The Admin dashboard login details
 Username : admin
 Password : admin
-
+Please change eindex.php and estyle.css in the employee directory to index.php and style.css
